@@ -9,6 +9,30 @@ git clone https://github.com/RohithSai2108/ray-fed-basic.git
 cd ray-fed-basic
 ```
 
+### Local Development Setup (Optional)
+
+If you want to develop or run the code locally without Docker, follow these steps:
+
+1. Create a virtual environment:
+```bash
+python -m venv venv
+```
+
+2. Activate the virtual environment:
+- On Windows:
+```bash
+.\venv\Scripts\activate
+```
+- On Unix or MacOS:
+```bash
+source venv/bin/activate
+```
+
+3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
 ### Building the Docker Image
 
 Build the Docker image using the following command:
