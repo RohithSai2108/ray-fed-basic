@@ -7,8 +7,8 @@ class SimpleCNN(nn.Module):
         super(SimpleCNN, self).__init__()
         self.conv1 = nn.Conv2d(in_channels, 32, 3, 1, 1)
         self.conv2 = nn.Conv2d(32, 64, 3, 1, 1)
-        # Assuming input size is 28x28 (like MNIST)
-        self.fc1 = nn.Linear(64 * 7 * 7 if in_channels == 1 else 64 * 8 * 8, 128)
+        # Input size is 28x28 (MNIST)
+        self.fc1 = nn.Linear(64 * 14 * 14, 128)  # After one max pooling layer
         self.fc2 = nn.Linear(128, num_classes)
 
     def forward(self, x):
