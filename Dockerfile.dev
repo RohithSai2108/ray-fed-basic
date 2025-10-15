@@ -1,0 +1,18 @@
+# Dockerfile
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+WORKDIR /app
+
+# If you have deps, add a requirements.txt and uncomment these two lines:
+# COPY requirements.txt .
+# RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy your source
+COPY . /app
+
+# Pick the correct entrypoint for YOUR repo (update this line)
+# e.g., if your main script is main.py or app.py, change it accordingly.
+CMD ["python", "run_experiment.py"]
