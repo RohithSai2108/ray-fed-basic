@@ -10,7 +10,7 @@ git clone https://github.com/RohithSai2108/ray-fed-basic.git
 cd ray-fed-basic
 ```
 
-### Local Development Setup (Optional)
+### Local Development Setup 
 
 If you want to develop or run the code locally without Docker, follow these steps:
 
