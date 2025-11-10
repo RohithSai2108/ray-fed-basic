@@ -47,7 +47,7 @@ docker build -t team-python-env:local .
 Run the federated learning experiment using Docker with the following command:
 
 ```bash
-docker run --rm --shm-size=1.07gb team-python-env:local
+docker run --rm --shm-size=4.0gb team-python-env:local
 ```
 
 Note: The `--shm-size=1.07gb` parameter is required to allocate sufficient shared memory for the federated learning process.
