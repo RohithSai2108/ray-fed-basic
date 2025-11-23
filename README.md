@@ -84,7 +84,7 @@ docker build -t ray-fed-basic:local .
 Run the container (example):
 
 ```powershell
-docker run --rm --shm-size=1.07gb ray-fed-basic:local
+docker run --rm --shm-size=5.07gb ray-fed-basic:local
 ```
 
 Notes:
