@@ -88,7 +88,7 @@ docker run --rm --shm-size=1.07gb ray-fed-basic:local
 ```
 
 Notes:
-- `--shm-size=1.07gb` is used in the Docker example to provide additional shared memory for matplotlib/parallelism. Adjust as needed for your environment.
+- `--shm-size=5.07gb` is used in the Docker example to provide additional shared memory for matplotlib/parallelism. Adjust as needed for your environment.
 - The Docker `CMD` (see `Dockerfile`) uses `python run_experiment.py --dataset mnist --clients 3 --rounds 10 --local-epochs 1` by default.
 
 ## Outputs
